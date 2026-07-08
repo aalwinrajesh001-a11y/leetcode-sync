@@ -2,10 +2,13 @@ import os
 l=["python","py","cpp","c++","java","c"]
 x=["py","py","cpp","cpp","java","c"]
 def navtotopic(topic):
+	topic=topic.lower()
 	path=os.path.join(os.getcwd(),'solutions',topic.lower())
 	os.makedirs(path,exist_ok=True)
 	os.chdir(path)
 def openandwrite(name,lang,code):
+	name=name.lower()
+	name=name.replace(" ",'_')
 	if lang.lower() in l:
 		lang=x[l.index(lang.lower())]
 	with open(f"{name}.{lang}","w") as file:
