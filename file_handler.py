@@ -1,18 +1,31 @@
-import os
-l=["python","py","cpp","c++","java","c"]
-x=["py","py","cpp","cpp","java","c"]
-def navtotopic(topic):
-	topic=topic.lower()
-	path=os.path.join(os.getcwd(),'solutions',topic.lower())
-	os.makedirs(path,exist_ok=True)
-	os.chdir(path)
-def openandwrite(name,lang,code):
+
+from pathlib import Path
+
+languages={
+	"python":"py",
+	"py":"py",
+	"cpp":"cpp",
+	"c++":"cpp",
+	"c plus plus":"cpp",
+	"java":"java",
+	"c":"c"
+	}
+
+def addfile(topic,name,language,code):
+
 	name=name.lower()
 	name=name.replace(" ",'_')
-	if lang.lower() in l:
-		lang=x[l.index(lang.lower())]
-	with open(f"{name}.{lang}","w") as file:
-		file.write(code)
-		print("\n\nFILE ADDED.")
+
+	language=languages.get(language)
+
+	file_name=name+"."+language
+
+
+	path=Path.cwd()/ 'solutions'/ topic/ file_name
+	path.parent.mkdir(parents=True, exist_ok=True)
+	print("\nFILE CREATED.")
+
+	path.write_text(code,encoding="utf-8")
+	print("\nCODE ADDED IN FILE.")
+
 	return
-	
