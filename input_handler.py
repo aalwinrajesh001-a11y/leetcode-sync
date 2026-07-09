@@ -13,7 +13,7 @@ topics=['ARRAY', 'STRINGS', 'LINKED LIST', 'TREE', 'GRAPH', 'DYNAMIC PROGRAMMING
 def basic_details():
 
 	problem_name=input("\tPROBLEM NAME : ")
-	while problem _name=="" or problem_name==" ":
+	while problem_name=="" or problem_name==" ":
 		problem_name=input("\tNAME CANNOT BE EMPTY. PLEASE ENTER A VALID NAME : ")
 
 	topic=input(f"\tPROBLEM TOPIC\n{topics} : ").upper()

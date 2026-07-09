@@ -8,11 +8,11 @@ def git_push(problem_name):
 		print("\nFILE STAGED SUCCESSFULLY.")
 
 		print("\nCOMMITING...")
-		subprocess.run(['git','commit','-m',commit_msg],capture_output=True,text=True,check=True))
-		print(\nf"SUCCESSFULLY COMMITED WITH COMMIT MESSAGE : '{commit_msg}' ")
+		subprocess.run(['git','commit','-m',commit_msg],capture_output=True,text=True,check=True)
+		print(f"\nSUCCESSFULLY COMMITED WITH COMMIT MESSAGE : '{commit_msg}' ")
 
 		print("\nPUSHING TO GIT HUB...")
-		subprocess.run(['git','push'],capture_output=True,text=True,check=True))
+		subprocess.run(['git','push'],capture_output=True,text=True,check=True)
 		print("\n\tSUCCESFULLY PUSHED.\n")
 	except subprocess.CalledProcessError as e:
 		print("\nAUTOMATION FAILED !")
