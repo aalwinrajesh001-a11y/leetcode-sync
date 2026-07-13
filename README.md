@@ -12,10 +12,10 @@ I primarily solve LeetCode problems using my **Android tablet** . Because browse
 
 ##  Features
 
-*   ** Interactive CLI Work Flow:** Dynamic terminal prompts with input loops validate problem names, algorithmic topics, and language configurations on the fly.
-*   ** Structured Organization:** Automatically classifies solutions into cleanly separated folders based on code topics (e.g., `ARRAY/`, `STRINGS/`).
-*   ** Automatic File Formatting:** Automatically handles title string conversions into standard, lowercase, underscore-separated file names (e.g., `two_sum.py`).
-*   ** End-to-End Git Automation:** Automatically stages, commits with a tailored message prefix (`SOLVED : Problem Name`), and pushes the updates directly to GitHub while handling sub-process exceptions.
+*   **Interactive CLI Work Flow :** Dynamic terminal prompts with input loops validate problem names, algorithmic topics, and language configurations on the fly.
+*   **Structured Organization :** Automatically classifies solutions into cleanly separated folders based on code topics (e.g., `ARRAY/`, `STRINGS/`).
+*   **Automatic File Formatting :** Automatically handles title string conversions into standard, lowercase, underscore-separated file names (e.g., `two_sum.py`).
+*   **End-to-End Git Automation :** Automatically stages, commits with a tailored message prefix (`SOLVED : Problem Name`), and pushes the updates directly to GitHub while handling sub-process exceptions.
 
 ## Demo
 
@@ -131,12 +131,12 @@ leetcode-sync/
 
 I am activPlanned improvements include : 
 
-*   ** Automatic Metadata Extraction:** Automatically pull problem titles and categories directly from the LeetCode platform to eliminate manual typing.
-*   ** URL Support:** Simply pass a LeetCode problem URL to initialize the configuration workspace and fetch context instantly.
-*   ** Better Language Detection:** Intelligently parse and detect the source programming language automatically based on code boilerplate or keywords.
-*   **⚙ Configuration File:** Support for a local config file (e.g., `.env` or `config.json`) to store customized directory paths, target repository configurations, and default languages.
-*   ** Statistics Module:** Track your daily solving streaks, difficulty counts, and total categorized metrics directly from your terminal dashboard.
-*   ** Better CLI Experience:** Improve user interaction designs using richer text rendering frameworks (like `rich` or `curses`) for cleaner prompts and loading indicators.
+*   **Automatic Metadata Extraction:** Automatically pull problem titles and categories directly from the LeetCode platform to eliminate manual typing.
+*   **URL Support:** Simply pass a LeetCode problem URL to initialize the configuration workspace and fetch context instantly.
+*   **Better Language Detection:** Intelligently parse and detect the source programming language automatically based on code boilerplate or keywords.
+*   **Configuration File:** Support for a local config file (e.g., `.env` or `config.json`) to store customized directory paths, target repository configurations, and default languages.
+*   **Statistics Module:** Track your daily solving streaks, difficulty counts, and total categorized metrics directly from your terminal dashboard.
+*   **Better CLI Experience:** Improve user interaction designs using richer text rendering frameworks (like `rich` or `curses`) for cleaner prompts and loading indicators.
 
 ## License
 
