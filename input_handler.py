@@ -29,12 +29,12 @@ def basic_details() :
    	 """	
 	
 	problem_name = input( "\tPROBLEM NAME : " )
-	while problem_name == "" or problem_name == " " :
+	while problem_name.strip() == "" :
 		problem_name = input( "\tNAME CANNOT BE EMPTY. PLEASE ENTER A VALID NAME : " )
 
 	topic = input( f"\tPROBLEM TOPIC\n{topics} : " ).upper()
 	while topic not in topics :
-		topic = input( f"\tINVALID ! PLEASE SELECT FROM THE LSIT \n\t{topics} : " ).upper()
+		topic = input( f"\tINVALID ! PLEASE SELECT FROM THE LIST \n\t{topics} : " ).upper()
 	
 	language = input( "\tLANGUAGE (PYTHON/CPP/JAVA) : " )
 

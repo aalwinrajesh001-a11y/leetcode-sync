@@ -27,14 +27,14 @@ def git_push( problem_name ) :
 
 		print( "\nCOMMITING..." )
 		subprocess.run( [ 'git', 'commit', '-m' , commit_msg ], capture_output = True, text = True , check = True )
-		print( f"\nSUCCESSFULLY COMMITED WITH COMMIT MESSAGE : '{commit_msg}' " )
+		print( f"\nSUCCESSFULLY COMMITTED WITH COMMIT MESSAGE : '{commit_msg}' " )
 
 		print( "\nPUSHING TO GIT HUB..." )
 		subprocess.run( [ 'git', 'push' ], capture_output = True, text = True, check = True )
 		print( "\n\tSUCCESFULLY PUSHED.\n" )
 	except subprocess.CalledProcessError as e :
 		print( "\nAUTOMATION FAILED !" )
-		print( f"FAILED DURING EXCECUTION OF : {" ".join(e.cmd)}" )
+		print( f"FAILED DURING EXECUTION OF : {" ".join(e.cmd)}" )
 		print( f"\nEXIT CODE :{e.returncode}" )
 		print( f"\n ERROR  DETAILS :\n{e.stderr.strip()}" )
 		return False
